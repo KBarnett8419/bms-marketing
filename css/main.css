@@ -233,11 +233,13 @@ nav ul li a {
 /*--TREEFROG CODE---------------------*/
 
 #menu {
-  border: solid 1px #222;
-  border-radius: 10px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  color: #5353c6;
+  font-weight: bold;
   float: right;
   margin-top: 2%;
-  margin-right: 3%;
+  margin-right: 5%;
 }
 
 /* HOME PAGE -------------------*/
@@ -294,6 +296,12 @@ nav ul li a {
 .services {
   margin-left: 4%;
 }
+
+.services h1 {
+  margin-bottom: 0;
+  font-size: 1.8em;
+}
+
 .serv-lines {
   width: 92%;
   border-top: solid 1px #eee;
@@ -313,6 +321,10 @@ nav ul li a {
   font-weight: bold;
 }
 
+.serv-lines li p {
+  margin-right: 4%;
+}
+
 .disclaimer {
   width: 92%;
   border-top: solid 3px #eee;
@@ -328,6 +340,17 @@ nav ul li a {
 
 .team {
   clear: both;
+}
+
+.about-us-container {
+  width: 100%;
+  border-bottom: solid 1px #eee;
+}
+
+.about-company {
+  margin: 0 4%;
+  font-size: 1.2em;
+
 }
 
 .team-title {
@@ -408,6 +431,15 @@ margin:4%;
 
 .reach-out p span{
   text-decoration: underline;
+}
+
+/*===THANK YOU PAGE=====*/
+.thanks {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.125em;
+  padding-top: 5%;
+  padding-bottom: 20%;
 }
 
 /*===PORTFOLIO=======*/
@@ -503,6 +535,23 @@ margin:4%;
    Modify as content requires.
    ========================================================================== */
 
+   @media only screen and (min-width: 320px){
+  .team-img {
+     	background-position:center;
+     	background-size:cover;
+     	background-repeat:no-repeat;
+     	width:30%;
+     	padding-bottom:32%;
+     	float:left;
+     	margin:4%;
+     	border:1px solid #4d0099;
+     }
+
+
+   }
+
+
+
 @media only screen and (min-width: 768px){
 
 
@@ -513,7 +562,12 @@ margin:4%;
 		#menu {
 			width:1.4em;
 			display: block;
-			background:#ddd;
+			/* background:#ddd; */
+      border: solid 1px #fff;
+      border-radius: 5px;
+      padding-top: 2px;
+      color: #5353c6;
+      font-weight: bolder;
 			font-size:1.35em;
 			text-align: center;
 		}
@@ -661,11 +715,12 @@ margin:4%;
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
-	width:25%;
-	padding-bottom:25%;
+	width:15%;
+	padding-bottom:15%;
 	float:left;
 	margin-right:20px;
   margin-top: 20px;
+  margin-bottom: 5px;
 	border:1px solid #4d0099;
 }
 

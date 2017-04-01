@@ -1,3 +1,32 @@
+<?php
+
+if(isset($_POST["submit"]))
+  {
+    if($_POST["name"]=="" ||$_POST["email"]=="" ||$_POST["subject"]=="" ||$_POST["comment"]== "")
+	{
+      echo "All fields are empty. Please fill all fields.";
+      }
+  else{
+      $email=$_POST['email'];
+      $email =filter_var($email, FILTER_SANITIZE_EMAIL);// apply validation filter for email
+
+	   if (!$email){// $email is not set
+       echo "Email Address is not valid.";
+     }
+      else
+	  {
+      $subject = $_POST['subject'];
+      $comment = $_POST['comment'];
+      $headers = 'From:'. $email2 . "\r\n"; // header formate...
+      $message = wordwrap($message, 70);
+       // send mail using php mail function
+        mail("barnettmarketingsolutions.biz@gmail.com", $subject, $comment, $headers);
+         echo "Your mail has been sent successfully! Thank you for your feedback.";
+      }
+    }
+}
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
@@ -7,7 +36,7 @@
         <meta name="author" content="Keri Barnett">
         <meta name="description" content="business marketing solutions website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="marketing, business, solutions, website, creation, maintenace, product, management, social media, email marketing, success, achievement, start ups, entrepreneurs,new jersey, nj, new york, ny, philadelphia, pa">
+        <meta name="keywords" content="marketing, business, solutions, website, creation, maintenace, product, management, social media, email marketing, success, achievement, start ups, entrepreneurs">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -31,7 +60,7 @@
               <li><a href="../index.html">Home</a></li>
               <li><a href="../services/index.html">Services</a></li>
               <li><a href="../about/index.html">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact/index.html">Contact</a></li>
               <li><a href="../portfolio/index.html">Portfolio</a></li>
           </ul>
         </nav>
@@ -60,11 +89,11 @@
      <div class="container">
 	   <div class="row">
 	     <div class="col-md-6">
-		<form action="contact.php" id="form" method="post" name="form">
+		<form action="index.html" id="form" method="post" name="form">
 			<input name="name" placeholder="Your Name Here" type="text" value="">
 			<input name="email" placeholder="Your Email Here" type="text" value="">
 			<input name="subject" placeholder="Subject" type="text" value="">
-			<textarea name="comments" placeholder="Enter Comments Here..."></textarea>
+			<textarea name="comment" placeholder="Enter Comment Here..."></textarea>
 			<input id="send" name="submit" type="submit" value="Send">
 		</form>
 	   </div>
