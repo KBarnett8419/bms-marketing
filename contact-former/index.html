@@ -57,28 +57,20 @@
     </section>
 
     <body class="contact-form">
-
-      <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-      <form action="html-contact-form.php" id="form" method="post" name="form">
-       <input name="name" placeholder="Your Name" type="text" value="">
-       <input name="email" placeholder="Your Email" type="text" value="">
-       <input name="subject" placeholder="Subject" type="text" value="">
-       <textarea name="message" placeholder="Write message here..."></textarea>
-
-       <img src="captcha_code_file.php"
-       id="captchaimg" >
-       <label for="message">Enter the code below:</label>
-       <input id="6_letters_code" name="6_letters_code" type="text">
-
-       <input id="send" name="submit" type="submit" value="Submit">
-      </form>
-      </div>
-      <div class="col-md-6"></div>
-      </div>
-      </div>
-
+     <div class="container">
+	   <div class="row">
+	     <div class="col-md-6">
+		<form action="contact.php" id="form" method="post" name="form">
+			<input name="name" placeholder="Your Name Here" type="text" value="">
+			<input name="email" placeholder="Your Email Here" type="text" value="">
+			<input name="subject" placeholder="Subject" type="text" value="">
+			<textarea name="comments" placeholder="Enter Comments Here..."></textarea>
+			<input id="send" name="submit" type="submit" value="Send">
+		</form>
+	   </div>
+	   <div class="col-md-6"></div>
+	 </div>
+	</div>
 
     </body>
 
@@ -88,7 +80,7 @@
 
 <!--end author content here-->
 <!-- JavaScript -->
-        <script type='text/javascript' src='../contact-1/scripts/gen_validatorv31.js'></script>
+        <script type='text/javascript' src='../contact1/scripts/gen_validatorv31.js'></script>
         <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script type="text/javascript" src="../js/script.js"></script>
