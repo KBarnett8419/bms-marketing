@@ -100,6 +100,7 @@ html, body {
   width: 100%;
   margin:auto;
   color: #222;
+  overflow-x: hidden;
 }
 
 
@@ -205,6 +206,8 @@ nav ul li a {
             padding-right: 50px;
           }
 
+
+
 /*--TREEFROG CODE---------------------
           * {
           		margin: 0;
@@ -260,6 +263,70 @@ nav ul li a {
 
 #hero-img {
   background-image: url('../img/wheels.jpg');
+}
+
+/*====MOBILE PLATFORMS=================*/
+.mobile-platforms ul li {
+  text-decoration: none;
+  display: inline;
+  margin: 0 6%;
+}
+
+.mobile-platforms {
+  width: 100%;
+  border-bottom: 1px solid #bfbfbf;
+  background-color:  #8c8c8c;
+  padding-top: 2%;
+  padding-right: 0%;
+
+}
+
+
+/*====NEWSLETTER SIGN-UP ==============*/
+.signup-container {
+  width: 100%;
+  border-bottom: solid 1px #bfbfbf;
+  background-color: #fff;
+  padding-top: 2%;
+  float: none;
+}
+
+.signup-title {
+  font-family: 'Source Serif Pro', serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.325em;
+}
+
+.signup-title span {
+  font-size: 1.4em;
+  color: #3359cc;
+}
+
+form {
+  margin: 5% 5%;
+  }
+
+.mc-field-group {
+  margin-top: 2%;
+  width: 90%;
+}
+
+/*.newsletter {
+  width: 90%;
+}
+*/
+
+.button {
+  background-color: #3359cc;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 92%;
+}
+
+.social-media {
+  display: none;
 }
 
 #services-list ul {
@@ -439,7 +506,12 @@ margin:4%;
   font-weight: bold;
   font-size: 1.125em;
   padding-top: 5%;
-  padding-bottom: 20%;
+  padding-bottom: 5%;
+}
+
+.return-home {
+  text-align: center;
+  padding-bottom: 15%;
 }
 
 /*===PORTFOLIO=======*/
@@ -649,6 +721,7 @@ margin:4%;
 	padding-bottom:22%;
 	border-left: solid 5px #003366;
   border-bottom: solid 5px #0066cc;
+  border-top: solid 5px #003366;
 }
 
 .div-1 {
@@ -667,6 +740,68 @@ margin:4%;
 
 .div-1 h2 {
   margin-left: 10%;
+}
+
+
+/*====NEWSLETTER SIGN-UP  Media 940==============*/
+.signup-container {
+  width: 55%;
+  border-bottom: solid 5px #999;
+  background-color: #fff;
+  padding-top: 2%;
+  float: left;
+  border-right: solid 5px #3359cc;
+
+}
+
+form {
+  margin: 2% 10%;
+  }
+
+
+/*.newsletter {
+  width: 60%;
+}
+*/
+
+.button {
+  background-color: #3359cc;
+  color: #fff;
+  font-weight: bold;
+}
+
+.social-media {
+  display: block;
+  width: 44.55%;
+  padding-bottom: 9.5%;
+  float: left;
+  /*border-left: solid 5px #3359cc;*/
+}
+
+.social-media h2 {
+  padding-top: 15%;
+  padding-bottom: 5%;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+}
+
+.social-media ul li {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 7%;
+}
+
+.social-media ul {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 13.5%;
+}
+
+.mobile-platforms {
+  display: none;
 }
 
 #services-list ul li a {
