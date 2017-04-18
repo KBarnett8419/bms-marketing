@@ -257,8 +257,8 @@ nav ul li a {
 	background-repeat:no-repeat;
 	width:100%;
 	padding-bottom:40%;
-	border-top:1px solid #bfbfbf;
-  border-bottom: solid 5px #003366
+	/*border-top:1px solid #bfbfbf;
+  border-bottom: solid 5px #003366*/
 }
 
 #hero-img {
@@ -266,20 +266,24 @@ nav ul li a {
 }
 
 /*====MOBILE PLATFORMS=================*/
-.mobile-platforms ul li {
+/*.mobile-platforms ul li {
   text-decoration: none;
   display: inline;
   margin: 0 6%;
 }
+*/
 
 .mobile-platforms {
   width: 100%;
   border-bottom: 1px solid #bfbfbf;
-  background-color:  #8c8c8c;
+  background-color:  #404040;
   padding-top: 2%;
+  padding-bottom: 2%;
   padding-right: 0%;
-
+  text-align: center;
+  word-spacing: 20px;
 }
+
 
 
 /*====NEWSLETTER SIGN-UP ==============*/
@@ -346,17 +350,22 @@ form {
 
 .coming-soon {
   width: 100%;
-  border-top: solid 5px #003366;
+  /*border-top: solid 5px #003366;*/
   float: none;
   text-align: center;
   background-color: #eee;
-  padding-bottom: 2%;
+  padding-bottom: 10%;
+  padding-top: 7%;
 }
 
-.coming-soon p {
-  font-size: 1.2em;
-  margin: 5%;
+.coming-soon h2 {
+  font-size: 1.3em;
+  margin: 0;
+  padding: 2% 0;
+}
 
+#portfolio-img {
+  border: 1px solid #4d4d4d;
 }
 
 /* SERVICES PAGE ----------*/
@@ -515,12 +524,16 @@ margin:4%;
 }
 
 /*===PORTFOLIO=======*/
-.portfolio {
+.portfolio h1 {
+  margin-left: 5%;
   text-align: center;
-  padding: 20%;
 }
 
-
+.portfolio-img {
+  padding: 5%;
+  padding-bottom: 30%;
+  text-align: center;
+}
 
 
 
@@ -716,18 +729,19 @@ margin:4%;
   background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
-	width:44.52%;
+	width:45%;
   float: left;
 	padding-bottom:22%;
-	border-left: solid 5px #003366;
+  border-bottom: none;
+	/*border-left: solid 5px #003366;
   border-bottom: solid 5px #0066cc;
-  border-top: solid 5px #003366;
+  border-top: solid 5px #003366;*/
 }
 
 .div-1 {
-  width: 54.6%;
-  border-top: solid 5px #0099ff;
-  border-right: solid 5px #0099ff;
+  width: 55%;
+  /*border-top: solid 5px #0099ff;
+  border-right: solid 5px #0099ff; */
   color: #ccc;
   background-color: #222;
   margin: 0;
@@ -746,11 +760,12 @@ margin:4%;
 /*====NEWSLETTER SIGN-UP  Media 940==============*/
 .signup-container {
   width: 55%;
-  border-bottom: solid 5px #999;
+  height: 25%;
+  /*border-bottom: solid 5px #999;*/
   background-color: #fff;
   padding-top: 2%;
   float: left;
-  border-right: solid 5px #3359cc;
+  /*border-right: solid 5px #3359cc;*/
 
 }
 
@@ -770,12 +785,12 @@ form {
   font-weight: bold;
 }
 
+/*
 .social-media {
   display: block;
   width: 44.55%;
-  padding-bottom: 9.5%;
   float: left;
-  /*border-left: solid 5px #3359cc;*/
+  /*border-left: solid 5px #3359cc;
 }
 
 .social-media h2 {
@@ -799,6 +814,18 @@ form {
   margin: 0;
   padding-bottom: 13.5%;
 }
+*/
+
+.social-media {
+  display: inline-block;
+  background-color: #222;
+  padding-top: 1.5%;
+  padding-left: 2%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  word-spacing: 20px;
+
+}
 
 .mobile-platforms {
   display: none;
@@ -816,8 +843,8 @@ form {
   display: block;
   margin: 0;
   padding-left: 5%;
-
 }
+
 
 .coming-soon {
   width: 35%;
@@ -826,16 +853,19 @@ form {
   text-align: center;
   float: left;
   border-top: none;
+  padding-top: 2%;
   padding-bottom: 0;
   background-color: #ccc;
   margin: 0;
 
 }
 
-.coming-soon h3 {
-  line-height: 100px;
-  color: #003366;
+.coming-soon h2 {
+  font-size: 1em;
+  margin: 2% 5%;
+  padding: 0;
 }
+
 
 .team-title {
   font-size: 2em;
@@ -875,6 +905,14 @@ margin-left: 30%;
 #contact-img {
   display: inline-block;
   float: left;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio-img {
+  margin-left: 5%;
 }
 
 footer {
