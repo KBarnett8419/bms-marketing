@@ -265,6 +265,8 @@ nav ul li a {
   background-image: url('../img/wheels.jpg');
 }
 
+
+
 /*====MOBILE PLATFORMS=================*/
 /*.mobile-platforms ul li {
   text-decoration: none;
@@ -284,7 +286,18 @@ nav ul li a {
   word-spacing: 20px;
 }
 
+.testimonial-desktop {
+  display: none;
+}
 
+.testimonial-mobile {
+  display: block;
+  margin: 5%;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 500;
+}
 
 /*====NEWSLETTER SIGN-UP ==============*/
 .signup-container {
@@ -523,21 +536,43 @@ margin:4%;
   padding-bottom: 15%;
 }
 
-/*===PORTFOLIO=======*/
+/*===PORTFOLIO PAGE mobile=======*/
 .portfolio h1 {
-  margin-left: 5%;
+  margin: 2% 5% 0 5%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio p {
+  margin: 0 5% 5% 5%;
   text-align: center;
 }
 
 .portfolio-img {
   padding: 5%;
-  padding-bottom: 30%;
   text-align: center;
+  float: none;
 }
 
+.client-info {
+  margin: 5%;
+  text-align: justify;
+}
 
+.client-testimony {
+  float: none;
+  margin: 7% 5%;
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  color: #262673;
+}
 
-
+.more {
+  margin: 5%;
+  text-align: center;
+}
 
 
 /* ==========================================================================
@@ -731,7 +766,7 @@ margin:4%;
 	background-repeat:no-repeat;
 	width:45%;
   float: left;
-	padding-bottom:22%;
+	padding-bottom: 22%;
   border-bottom: none;
 	/*border-left: solid 5px #003366;
   border-bottom: solid 5px #0066cc;
@@ -756,6 +791,20 @@ margin:4%;
   margin-left: 10%;
 }
 
+.testimonial-desktop {
+  display: block;
+  margin: 5%;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 500;
+  position: relative;
+  left: 45px;
+}
+
+.testimonial-mobile {
+  display: none;
+}
 
 /*====NEWSLETTER SIGN-UP  Media 940==============*/
 .signup-container {
@@ -907,12 +956,45 @@ margin-left: 30%;
   float: left;
 }
 
-.portfolio {
+/*=====portfolio 940======*/
+.portfolio h1 {
+  margin: 2% 5% 0 5%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio p {
+  margin: 0 5% 5% 5%;
   text-align: center;
 }
 
 .portfolio-img {
-  margin-left: 5%;
+  padding: 0 2% 2% 5%;
+  text-align: center;
+  float: left;
+}
+
+.client-info {
+  margin: 0 5%;
+  float: left;
+  width: 60%;
+  font-size: 1.2em;
+}
+
+.client-testimony {
+  clear: both;
+  margin: 7% 5%;
+  padding-right: 5%;
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  color: #262673;
+}
+
+.more {
+  margin: 5%;
+  text-align: center;
 }
 
 footer {
@@ -922,6 +1004,16 @@ footer {
 footer p {
   line-height: 0px;
 }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+.hero {
+  
+}
+
+
 
 }
 
