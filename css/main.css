@@ -414,6 +414,23 @@ form {
   margin-right: 4%;
 }
 
+#consultation {
+  border-top: none;
+}
+
+.service-button {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+
+#learn-more {
+  color: #fff;
+  background-color: #5353c6;
+}
+
 .disclaimer {
   width: 92%;
   border-top: solid 3px #eee;
@@ -793,7 +810,7 @@ margin:4%;
 
 .testimonial-desktop {
   display: block;
-  margin: 5%;
+  margin: 10% 5% 2% 5%;
   text-align: center;
   font-size: 1.2em;
   font-style: italic;
@@ -1010,7 +1027,7 @@ footer p {
 
 @media only screen and (min-width: 1024px) {
 .hero {
-  
+
 }
 
 
