@@ -94,20 +94,204 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html, body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  width: 90%;
+  padding: 0 5% 2% 5%;
+}
+
+.section {
+  margin-top: 10%;
+}
+
+.tip-1-img {
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
+width:30%;
+padding-bottom: 30%;
+border: 1px solid #ccc;
+margin: 0 20px 0 0;
+float: left;
+}
+
+.tip-2-img {
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
+width:30%;
+padding-bottom: 30%;
+border: 1px solid #ccc;
+margin: 20px 20px 0 0;
+float: right;
+}
+
+.tip-3-img {
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
+width:30%;
+padding-bottom: 30%;
+border: 1px solid #ccc;
+margin: 0 20px 0 0;
+float: left;
+}
+
+#tip-1-img {
+  background-image: url('../../img/kate-spade-popup.jpg');
+}
 
 
+#tip-2-img {
+  background-image: url('../../img/interior-design.jpg');
+}
 
+#tip-3-img {
+  background-image: url('../../img/contact-form-example.jpg');
+}
 
+.tip-title {
+  color: #5353c6;
+  text-align: center;
+  font-family:  'Fredericka the Great', cursive;
+  }
 
+ .tip-title span {
+   font-size: 1.225em;
+   font-weight: bold;
+ }
 
+h2 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
 
+h2 span {
+  text-decoration: underline;
+}
 
+a {
+  text-decoration: none;
+  color: #5353c6;
+  font-weight: bold;
+}
 
+/*====cover=======*/
 
+/*@media screen and (min-width: 600px){ */
+.cover-background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../img/office.png');
+  width: 90%;
+  margin: 5%;
+  padding-bottom: 70%;
+}
 
+/*
+.title-container {
+  background-color: #5353c6;
+  opacity: 0.8;
+  border-radius: 100%;
+  color: #fff;
+  width: 70%;
+  position: relative;
+  left: 150px;
+}
 
+.company, .article-name {
+  width: 40%;
+  text-align: center;
+  position: relative;
+  left: 220px;
+}
 
+.company h2 {
+    font-family: 'Michroma', sans-serif;
+    text-transform: capitalize;
+    padding-top: 2%;
+    position: relative;
+    top: 50px;
+    line-height: 30px;
+    font-size: 1em;
+}
 
+.company span {
+  color: #222;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.article-name {
+  width: 70%;
+  padding-bottom: 20%;
+  position: relative;
+  left: 120px;
+  top: 50px;
+  font-family: 'Lato', sans-serif;
+}
+
+.article-name span {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.2em;
+  color: #222;
+}
+*/
+
+.title-container {
+  background-color: #5353c6;
+  opacity: 0.8;
+  border-radius: 100%;
+  color: #fff;
+  width: 70%;
+  position: relative;
+  left: 75px;
+  top: 300px;
+}
+
+.company, .article-name {
+  width: 40%;
+  text-align: center;
+  position: relative;
+  left: 100px;
+}
+
+.company h2 {
+    font-family: 'Michroma', sans-serif;
+    text-transform: capitalize;
+    padding-top: 2%;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    line-height: 30px;
+    font-size: 1em;
+}
+
+.company span {
+  color: #222;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.article-name {
+  width: 70%;
+  padding-bottom: 20%;
+  position: relative;
+  left: 80px;
+  top: 50px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8em;
+}
+
+.article-name span {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.2em;
+  color: #222;
+}
+
+/*}
 
 
 
