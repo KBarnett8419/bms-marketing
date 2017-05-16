@@ -729,6 +729,20 @@ margin:4%;
   padding-bottom: 2%;
 }
 
+/*=====TEMPLATE MOBILE==========*/
+.template-container {
+  margin: 5%;
+}
+
+.mommy-blog-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 25%;
+  border: 1px solid #404040;
+}
+
 
 /* ==========================================================================
    Helper classes
