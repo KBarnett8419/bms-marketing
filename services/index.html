@@ -32,7 +32,13 @@
               <li><a href="#">Services</a></li>
               <li><a href="../about/index.html">About</a></li>
               <li><a href="../contact/index.html">Contact</a></li>
-              <li><a href="../portfolio/index.html">Portfolio</a></li>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                    <a href="../portfolio/index.html">Portfolio</a>
+                    <a href="../templates/index.html">Templates</a>
+                  </div>
+                </div>
           </ul>
         </nav>
 
@@ -106,21 +112,6 @@
 
         </section>
 
-        <section class="serv-lines" id="product-management">
-          <div>
-            <h3>Product Management</h3>
-            <p>Product management is just that- managing your product from launch to phase-out (or delistment). The term "Road-mapping" is used to describe that process, where you draw out the beginning phases of the product and all waves and phases until the end ot its time (if that's your intent).
-               Product lifecycle management, product developement- We can help to take your product(s) to the next level.
-            </p>
-          </div>
-
-          <div class="service-button">
-              <a href="http://barnettmarketing.org/contact" target="_blank" role="button">
-                <input id="learn-more" name="submit" type="submit" value="Learn More">
-              </a>
-          </div>
-
-        </section>
 
 
         <section class="serv-lines" id="online-marketing-management">
@@ -176,6 +167,20 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

@@ -32,7 +32,13 @@
               <li><a href="../services/index.html">Services</a></li>
               <li><a href="#">About</a></li>
               <li><a href="../contact/index.html">Contact</a></li>
-              <li><a href="../portfolio/index.html">Portfolio</a></li>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                    <a href="../portfolio/index.html">Portfolio</a>
+                    <a href="../templates/index.html">Templates</a>
+                  </div>
+                </div>
           </ul>
         </nav>
 
@@ -95,6 +101,20 @@ She lives in New Jersey with her husband and son. In her free time she loves to 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
