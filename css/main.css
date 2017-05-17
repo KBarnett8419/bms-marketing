@@ -351,6 +351,17 @@ nav ul li a {
   font-size: 1.2em;
   font-style: italic;
   font-weight: 500;
+  background-color: #b3b3b3;
+  padding: 5%;
+  margin: 0;
+}
+
+.testimonial-mobile a {
+  text-decoration: none;
+}
+
+.testimonial-mobile p {
+  font-weight: 600;
 }
 
 /*====NEWSLETTER SIGN-UP ==============*/
@@ -739,10 +750,17 @@ margin:4%;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 25%;
+  padding-bottom: 80%;
   border: 1px solid #404040;
 }
 
+#blog-template-img {
+  background-image: url('../img/blog-template.png');
+}
+
+.template-1 p {
+  font-size: 1.1em;
+}
 
 /* ==========================================================================
    Helper classes
@@ -949,7 +967,7 @@ margin:4%;
   color: #ccc;
   background-color: #222;
   margin: 0;
-  padding-bottom: 3%;
+  padding-bottom: 8%;
   padding-top: 1%;
   float: left;
   text-align: left;
@@ -1082,7 +1100,7 @@ form {
   float: left;
   border-top: none;
   padding-top: 2%;
-  padding-bottom: 0;
+  padding-bottom: 5%;
   background-color: #ccc;
   margin: 0;
 
@@ -1276,6 +1294,24 @@ footer p {
 }
 
 /*====end of dropdown 940======*/
+
+/*=====TEMPLATE PAGE 940=======*/
+.mommy-blog-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+  padding-bottom: 25%;
+  border: 1px solid #404040;
+}
+
+#blog-template-img {
+  background-image: url('../img/blog-template.520w.png');
+}
+
+.template-1 p {
+  font-size: 1.1em;
+}
 
 
 }
