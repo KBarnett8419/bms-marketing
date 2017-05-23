@@ -9,5 +9,15 @@ $(document).ready(function(){
   		}
 
 });
+});
 
+$(function() {
+$('#section-1').hide(); // this or use css to hide the div
+$('#section-1').fadeIn('slow');
+
+$('#section-2').hide(); // this or use css to hide the div
+$('#section-2').delay(1000).fadeIn('slow');
+
+$('#section-3').hide(); // this or use css to hide the div
+$('#section-3').delay(2000).fadeIn('slow');
 });

@@ -158,8 +158,6 @@ html, body {
 
 /*====end of Nav drop down======*/
 
-/*====HEADER mobile========*/
-
 #company-name {
   font-family: 'Michroma', sans-serif;
   text-transform: uppercase;
@@ -182,12 +180,12 @@ html, body {
 }
 
 #intro-background {
-  background-image: url('../img/brighter-blue-gradient.jpg');
+  background-image: url('../img/blue-gradient.jpg');
 }
 
 .motto {
   background-color: #222;
-  border-bottom: solid 5px #8c8cd9;
+  border-bottom: solid 5px #5353c6;
 }
 
 .motto h2 {
@@ -198,8 +196,10 @@ html, body {
   text-align: center;
 }
 
-/*=====HOME PAGE DETAILS mobile======*/
+.introduction h1 {
+  width: 80%;
 
+}
 
 .div-1 {
   width: 100%;
@@ -260,6 +260,35 @@ nav ul li a {
             padding-right: 50px;
           }
 
+
+
+/*--TREEFROG CODE---------------------
+          * {
+          		margin: 0;
+          		padding: 0;
+          	}
+          	ul {
+          		width:100%;
+          	}
+          	li {
+          		width:30%;
+          		float:left;
+          		/*border-right: 1px solid #eee;*/
+              /*
+          	}
+          	li:last-child {
+          		border-right:none;
+          	}
+            nav ul li a {
+              display: block;
+              width:80%;
+              background:#ddd;
+              padding:4% 10%;
+              font-size:1.35em;
+              text-decoration: none;
+          	}
+/*--TREEFROG CODE---------------------*/
+
 #menu {
   border: solid 1px #fff;
   border-radius: 5px;
@@ -271,7 +300,24 @@ nav ul li a {
 }
 
 /* HOME PAGE -------------------*/
+.company-mission {
+  margin: auto 5%;
+  font-size: 1.2em;
+}
 
+.hero {
+  background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100%;
+	padding-bottom:40%;
+	/*border-top:1px solid #bfbfbf;
+  border-bottom: solid 5px #003366*/
+}
+
+#hero-img {
+  background-image: url('../img/wheels.jpg');
+}
 
 
 
@@ -342,6 +388,20 @@ nav ul li a {
   text-align: center;
   line-height: 10px;
   color: #e6e6e6;
+}
+
+.free-item {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  line-height: 20px;
+  font-size: 1.6em;
+  text-align: center;
+  color: #e6e6e6;
+  font-weight: 700;
+}
+
+.free-item span {
+  font-weight: 800;
 }
 
 .signup-title span {
@@ -635,6 +695,50 @@ margin:4%;
   text-align: center;
 }
 
+/*===BASIC OFFER mobilt===========*/
+.basic-offer {
+  width: 100%;
+  background-color: #fff;
+  float: left;
+  padding: 2% 0 0 2%;
+}
+
+.website-offer {
+  padding-left: 5%;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.website-offer h2 {
+  text-transform: uppercase;
+}
+.website-offer span {
+  display: none;
+}
+
+.website-offer img {
+  width: 88px;
+  height: 80px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+.website-offer p {
+  position: relative;
+  bottom: 0;
+  font-weight: 600;
+  text-align: left;
+}
+
+.website-offer ul {
+  position: relative;
+  bottom: 0;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 0;
+  padding-bottom: 2%;
+}
 
 /*=====TEMPLATE MOBILE==========*/
 .template-container {
@@ -815,7 +919,6 @@ margin:4%;
               background:#222;
 }
 
-/*====Header 940========*/
 
 #company-name {
   font-family: 'Michroma', sans-serif;
@@ -844,47 +947,51 @@ margin:4%;
   color: #333;
 }
 
-/*====WEBSITE-OFFER 940=======*/
-.website-offer {
-  width: 100%;
-  background-color: #fff;
-  padding-bottom: 30%;
-}
-
-.website-offer-wrapper {
+.hero {
+  background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:48%;
   float: left;
-  margin: 1% 0 1% 5%;
+	padding-bottom: 24.5%;
+  border-bottom: none;
+	/*border-left: solid 5px #003366;
+  border-bottom: solid 5px #0066cc;
+  border-top: solid 5px #003366;*/
 }
 
-.create-website h3 {
-  font-size: 2em;
-  color: #001a4d;
-}
-
-.create-website p {
-  font-size: 1.1em;
-  font-weight: 500;
-}
-
-.bundle {
-  margin-top: 3%;
-}
-
-#button-1 {
-  width: 15%;
-  color: #fff;
-  font-size: 1.1em;
-  background-color: #ffcc00;
-}
-
-.responsive-img {
+.div-1 {
+  width: 52%;
+  /*border-top: solid 5px #0099ff;
+  border-right: solid 5px #0099ff; */
+  color: #ccc;
+  background-color: #222;
+  margin: 0;
+  padding-bottom: 8%;
+  padding-top: 1%;
   float: left;
-  z-index: -1;
+  text-align: left;
 
 }
 
-.online-presence-wrapper {
-  clear: both;
+.div-1 h2 {
+  margin-left: 10%;
+}
+
+.testimonial-desktop {
+  display: block;
+  margin: 2% 5% 0 5%;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 600;
+  position: relative;
+  left: 40px;
+  top: 40px;
+}
+
+.testimonial-desktop a {
+  text-decoration: none;
 }
 
 .testimonial-mobile {
@@ -913,11 +1020,47 @@ form {
   }
 
 
+/*.newsletter {
+  width: 60%;
+}
+*/
+
 .button {
   background-color: #3359cc;
   color: #fff;
   font-weight: bold;
 }
+
+/*
+.social-media {
+  display: block;
+  width: 44.55%;
+  float: left;
+  /*border-left: solid 5px #3359cc;
+}
+
+.social-media h2 {
+  padding-top: 15%;
+  padding-bottom: 5%;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+}
+
+.social-media ul li {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 7%;
+}
+
+.social-media ul {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 13.5%;
+}
+*/
 
 .social-media {
   display: inline-block;
@@ -1057,6 +1200,42 @@ footer {
 
 footer p {
   line-height: 0px;
+}
+
+/*====basic offer 940=========*/
+.basic-offer {
+  width: 50%;
+  background-color: #fff;
+  float: left;
+  padding: 2% 0 0 2%;
+}
+
+.website-offer {
+  padding-left: 5%;
+  font-size: 1.2em;
+}
+
+.website-offer h2 {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.website-offer img {
+  position: relative;
+  bottom: 30px;
+  right: 20px;
+}
+
+.website-offer p {
+  position: relative;
+  bottom: 50px;
+  font-weight: 600;
+}
+
+.website-offer ul {
+  position: relative;
+  bottom: 50px;
+  font-weight: 500;
 }
 
 /*===dropdown 940======*/
