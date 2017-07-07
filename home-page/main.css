@@ -1,0 +1,1504 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body {
+  font-family: 'Source Serif Pro', serif;
+  background-color: #d9d9d9;
+  width: 100%;
+  margin:auto;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/*===NAVIGATION DROPDOWN MOBILE CODE=====*/
+.dropdown {
+    float: right;
+    overflow: visible;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    color: #eee;
+    margin: 0;
+    background-color: inherit;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 2px;
+    right: 45px;
+    top: 1px;
+
+}
+
+.nav-bkgd a:hover, .dropdown:hover .dropbtn {
+    background-color: #aa80ff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 5px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #222;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/*====end of Nav drop down======*/
+
+/*====HEADER mobile========*/
+
+#company-name {
+  font-family: 'Michroma', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  width: auto;
+  letter-spacing: 10px;
+  float: left;
+  padding-left: 20px;
+}
+
+.introduction {
+  background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100%;
+	border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  float: left;
+}
+
+#intro-background {
+  background-image: url('../img/brighter-blue-gradient.jpg');
+}
+
+.motto {
+  background-color: #222;
+  border-bottom: solid 5px #8c8cd9;
+}
+
+.motto h2 {
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #eee;
+  text-align: center;
+}
+
+/*=====HOME PAGE DETAILS mobile======*/
+
+/*====WEBSITE-OFFER mobile=======*/
+.website-offer-body {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 15%;
+  padding-top: 2%;
+}
+
+.website-offer-wrapper {
+  float: none;
+  margin: 1% 5% 1% 5%;
+}
+
+.website-offer-wrapper h3 {
+  font-size: 2em;
+  color: #001a4d;
+}
+
+.website-offer-wrapper p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.website-offer-wrapper a {
+  text-decoration: none;
+  color: #001a4d;
+}
+
+.bundle {
+  margin-top: 3%;
+}
+
+#button-1 {
+  width: 35%;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #ffcc00;
+  margin-top: 2%;
+}
+
+.responsive-img {
+  float: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  padding-bottom: 35%;
+  position: relative;
+  top: 20px;
+  right: 0;
+  overflow: visible;
+
+}
+
+#responsive-img {
+  background-image: url('../img/responsive-transparent-medium.png');
+}
+
+/*=====ONLINE MANAGAEMENT mobile=======*/
+
+.online-presence-body {
+  clear: both;
+  background-color: #b3ccff;
+  width: 100%;
+  padding-bottom: 10%;
+  padding-top: 2%;
+}
+
+.online-offer-wrapper {
+  float: none;
+  margin: 1% 0 1% 5%;
+}
+
+.online-offer-wrapper h3 {
+  font-size: 2em;
+  color: #001a4d;
+}
+
+.online-offer-wrapper p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.online-offer-wrapper a {
+  text-decoration: none;
+  color: #001a4d;
+}
+
+#button-2 {
+  width: 35%;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #ffcc00;
+  box-shadow: 1px 1px 12px #404040;
+  margin-top: 2%;
+}
+
+.online-img {
+  float: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  padding-bottom: 50%;
+  position: relative;
+  top: 20px;
+  right: 0;
+  overflow: visible;
+}
+
+#online-img {
+  background-image: url('../img/social-bg-trans.png');
+}
+
+/*====end of online presence========*/
+
+.div-2 {
+  clear: both;
+  margin: auto 20px;
+}
+
+footer {
+  border-top: solid 2px #eee;
+  padding: 0 4%;
+}
+
+footer p {
+  margin: 2% 4%;
+  text-align: center;
+}
+
+footer p span {
+  font-size: 1.2em;
+}
+
+/*=======NAVIGATION mobile============*/
+
+.nav-bkgd {
+  background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100%;
+	padding-bottom:2%;
+	float:left;
+	margin-right:20px;
+	border:1px solid #ccc;
+  background-color: #222;
+}
+
+nav { float: right;}
+
+nav ul li {display: inline-block;
+            text-align: right;}
+
+nav ul li a {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 18px;
+            color: #eee;
+            padding-left: 80px;
+            padding-right: 50px;
+          }
+
+#menu {
+  border: solid 1px #fff;
+  border-radius: 5px;
+  color: #5353c6;
+  font-weight: bold;
+  float: right;
+  margin-top: 2%;
+  margin-right: 5%;
+}
+
+/*=============================*/
+
+.mobile-platforms {
+  width: 100%;
+  border-bottom: 1px solid #bfbfbf;
+  background-color:  #404040;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 0%;
+  text-align: center;
+  word-spacing: 20px;
+}
+
+.testimonial-desktop {
+  display: none;
+}
+
+.testimonial-mobile {
+  display: block;
+  margin: 5%;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 500;
+  background-color: #eee;
+  padding: 5%;
+  margin: 0;
+}
+
+.testimonial-mobile a {
+  text-decoration: none;
+  color: #002266;
+}
+
+.testimonial-mobile p {
+  font-weight: 600;
+}
+
+/*====NEWSLETTER SIGN-UP ==============*/
+.signup-container {
+  width: 100%;
+  /*border-bottom: solid 1px #bfbfbf;*/
+  background-image: url('../img/coffee-computer.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  float: none;
+  clear: both;
+}
+
+.color-container {
+  /*
+  margin: 2% 2% 1% 2%;*/
+  border: 1px solid #eee;
+  background-color: #ccc;
+}
+
+.signup-title {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.325em;
+  text-align: center;
+  line-height: 10px;
+  color: #404040;
+}
+
+.signup-title span {
+  font-size: 1.5em;
+  color: #001a4d;
+}
+
+form {
+  margin: 5% 5%;
+  }
+
+.mc-field-group {
+  margin-top: 2%;
+  position: relative;
+  left: 5px;
+}
+
+#mc_embed_signup_scroll {
+  background-color: #ccc;
+  padding: 2%;
+  color: #404040;
+  position: relative;
+  right: 0;
+  opacity: 0.97;
+}
+
+#mc_embed_signup input {
+  color: #222;
+}
+
+.button {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 30%;
+  position: relative;
+  left: 3%;
+}
+
+.free-item {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.social-media {
+  display: none;
+}
+
+
+.coming-soon {
+  width: 100%;
+  /*border-top: solid 5px #003366;*/
+  float: none;
+  text-align: center;
+  background-color: #eee;
+  padding-bottom: 10%;
+  padding-top: 7%;
+}
+
+.coming-soon h2 {
+  font-size: 1.3em;
+  margin: 0;
+  padding: 2% 0;
+}
+
+#portfolio-img {
+  border: 1px solid #4d4d4d;
+}
+
+/* SERVICES PAGE ----------*/
+.services {
+  margin-left: 4%;
+}
+
+.services h1 {
+  margin-bottom: 0;
+  font-size: 1.8em;
+}
+
+.serv-lines {
+  width: 92%;
+  border-top: solid 1px #eee;
+  padding: 0 4%;
+}
+
+.serv-lines h3 {
+  color: #5353c6;
+  font-size: 1.5em;
+}
+
+.serv-lines p {
+  font-size: 1.2em;
+}
+
+.serv-lines span {
+  font-weight: bold;
+}
+
+.serv-lines li p {
+  margin-right: 12%;
+}
+
+#website-creation-maintenance {
+  border-top: none;
+}
+
+.service-button {
+  width: 50%;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+
+#learn-more {
+  color: #fff;
+  background-color: #5353c6;
+}
+
+.disclaimer {
+  width: 92%;
+  border-top: solid 3px #eee;
+  padding: 0 4%;
+}
+
+.disclaimer span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* ABOUT PAGE--------------*/
+
+.team {
+  clear: both;
+}
+
+.about-us-container {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: solid 1px #eee;
+  padding: 2% 0;
+}
+
+.about-company {
+  margin: 0 4%;
+  font-size: 1.2em;
+
+}
+
+.mission-container {
+  width: 100%;
+  background-color: #eee;
+  padding: 2% 0;
+}
+
+.mission {
+  margin: 0 4% 4% 4%;
+  font-size: 1.2em;
+}
+
+.team-title {
+  font-size: 1.6em;
+  margin-right: 4%;
+}
+
+.team-description {
+  margin: 4%;
+  font-size: 1.2em;
+}
+
+.team-img {
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:25%;
+	padding-bottom:25%;
+	float:left;
+	margin:4%;
+	border:1px solid #4d0099;
+}
+
+#team-img-keri {
+  background-image: url('../img/keri-barnett2.png');
+}
+
+/*CONTACT PAGE------*/
+input {
+width:100%;
+margin-bottom:20px;
+padding:5px;
+height:30px;
+box-shadow:1px 1px 12px gray;
+border-radius:3px;
+border:none
+}
+textarea {
+width:100%;
+height:80px;
+margin-top:10px;
+padding:5px;
+box-shadow:1px 1px 12px gray;
+border-radius:3px
+}
+#send {
+width:100%;
+height:45px;
+margin-top:40px;
+border-radius:3px;
+background-color:#cd853f;
+border:1px solid #fff;
+color:#fff;
+font-family:'Raleway',sans-serif;
+font-size:18px
+}
+div#feedback {
+text-align:center;
+height:520px;
+width:330px;
+padding:20px 25px 20px 15px;
+background-color:gray;
+border-radius:3px;
+border:1px solid #cd853f;
+font-family:'Raleway',sans-serif;
+float:left
+}
+
+.container {
+width:90%;
+margin:4%;
+}
+
+.reach-out {
+  margin: 4%;
+  font-size: 1.2em;
+}
+
+.reach-out p span{
+  text-decoration: underline;
+}
+
+/*===THANK YOU PAGE=====*/
+.thanks {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.125em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.return-home {
+  text-align: center;
+  padding-bottom: 15%;
+}
+
+/*===PORTFOLIO PAGE mobile=======*/
+.portfolio h1 {
+  margin: 2% 5% 0 5%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio p {
+  margin: 0 5% 5% 5%;
+  text-align: center;
+}
+
+.portfolio-img {
+  padding: 5%;
+  text-align: center;
+  float: none;
+}
+
+.client-info {
+  margin: 5%;
+  text-align: justify;
+}
+
+.client-testimony {
+  float: none;
+  margin: 7% 5%;
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  color: #262673;
+}
+
+.more {
+  margin: 5%;
+  text-align: center;
+}
+
+
+/*=====TEMPLATE MOBILE==========*/
+.template-container {
+  margin: 5%;
+}
+
+.mommy-blog-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 80%;
+  border: 1px solid #404040;
+}
+
+#blog-template-img {
+  background-image: url('../img/blog-template.png');
+}
+
+.template-1 p {
+  font-size: 1.1em;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 320px){
+  .team-img {
+     	background-position:center;
+     	background-size:cover;
+     	background-repeat:no-repeat;
+     	width:30%;
+     	padding-bottom:32%;
+     	float:left;
+     	margin:4%;
+     	border:1px solid #4d0099;
+     }
+
+
+   }
+
+
+
+@media only screen and (min-width: 768px){
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+		#menu {
+			width:1.4em;
+			display: block;
+			/* background:#ddd; */
+      border: solid 1px #fff;
+      border-radius: 5px;
+      padding-top: 2px;
+      color: #5353c6;
+      font-weight: bolder;
+			font-size:1.35em;
+			text-align: center;
+		}
+		#nav.js {
+			display: none;
+		}
+		ul {
+			width:100%;
+		}
+		li {
+			width:100%;
+			border-right:none;
+		}
+
+.website-offer-body {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 0%;
+  padding-top: 2%;
+}
+
+
+.responsive-img {
+  float: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 70%;
+  padding-bottom: 35%;
+  position: relative;
+  top: 0px;
+  right: 0;
+  left: 15%;
+  overflow: visible;
+}
+
+.online-img {
+float: none;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+width: 80%;
+padding-bottom: 50%;
+position: relative;
+top: 20px;
+right: 0;
+left: 10%;
+overflow: visible;
+}
+
+.online-offer-wrapper p {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-right: 4%;
+}
+
+
+	}
+
+@media only screen and (min-width: 940px) {
+  html, body {
+    font-family: 'Source Serif Pro', serif;
+    background-color: #ccc;
+    width: 100%;
+    margin:auto;
+  }
+
+  #menu {
+    display: none;}
+
+  nav { float: right;
+        }
+  /*float right* padding: 75px 40px*/
+
+  nav ul li {display: inline-block;
+             padding-top: 3%;
+             overflow: hidden;
+            }
+
+  nav ul li a {
+              text-transform: uppercase;
+              text-decoration: none;
+              font-size: 18px;
+              color: #eee;
+              padding-left: 4%;
+              background:#222;
+}
+
+/*====Header 940========*/
+
+#company-name {
+  font-family: 'Michroma', sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  width: auto;
+  letter-spacing: 10px;
+  float: left;
+  padding-left: 20px;
+}
+
+.motto h2 {
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #eee;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.company-mission {
+  margin: 1% 2% 2% 5%;
+  width: 45%;
+  float: left;
+  font-size: 1.3em;
+  color: #333;
+}
+
+/*====WEBSITE-OFFER 940=======*/
+.website-offer-body {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 30%;
+  padding-top: 0;
+}
+
+.website-offer-wrapper {
+  float: left;
+  margin: 1% 0 1% 5%;
+}
+
+.website-offer-wrapper h3 {
+  font-size: 2em;
+  color: #001a4d;
+}
+
+.website-offer-wrapper p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.bundle {
+  margin-top: 3%;
+}
+
+#button-1 {
+  width: 15%;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #ffcc00;
+  margin-top: 2%;
+}
+
+.responsive-img {
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 30%;
+  padding-bottom: 20%;
+  position: relative;
+  top: 120px;
+  right: 70px;
+  overflow: visible;
+
+}
+
+#responsive-img {
+  background-image: url('../img/responsive-transparent-medium.png');
+}
+
+/*=====ONLINE MANAGAEMENT 940=======*/
+
+.online-presence-body {
+  clear: both;
+  background-color: #b3ccff;
+  width: 100%;
+  padding-bottom: 30%;
+  padding-top: 0;
+}
+
+.online-offer-wrapper {
+  float: left;
+  margin: 1% 0 1% 5%;
+}
+
+.online-offer-wrapper h3 {
+  font-size: 2em;
+  color: #001a4d;
+}
+
+.online-offer-wrapper p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#button-2 {
+  width: 15%;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #ffcc00;
+  box-shadow: 1px 1px 12px #404040;
+  margin-top: 2%;
+}
+
+.responsive-img {
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 30%;
+  padding-bottom: 20%;
+  position: relative;
+  top: 120px;
+  right: 70px;
+  overflow: visible;
+
+}
+.online-img {
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 30%;
+  padding-bottom: 20%;
+  position: relative;
+  top: 80px;
+  right: 0;
+  overflow: visible;
+}
+
+#online-img {
+  background-image: url('../img/social-bg-trans.png');
+}
+
+/*====TESTIMONIAL 940============*/
+.testimonial-desktop {
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 500;
+  background-color: #eee;
+  padding: 5%;
+  margin: 0;
+}
+
+.testimonial-desktop a {
+  text-decoration: none;
+  color: #002266;
+}
+
+.testimonial-desktop p {
+  font-weight: 600;
+}
+
+/*=====SIGNUP 940=======*/
+.signup-container {
+  width: 100%;
+  /*border-bottom: solid 1px #bfbfbf;*/
+  background-image: url('../img/coffee-computer.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  float: none;
+}
+
+.testimonial-mobile {
+  display: none;
+}
+
+.mc-field-group {
+  margin-top: 2%;
+  position: relative;
+  left: 15px;
+}
+
+#mc_embed_signup_scroll {
+  text-align: left;
+  margin: 5%;
+  background-color: #ccc;
+  padding: 2%;
+  color: #404040;
+  position: relative;
+  right: 6px;
+  opacity: 0.97;
+}
+
+#mc_embed_signup input {
+  color: #222;
+}
+
+
+form {
+  margin: 2% 10%;
+  }
+
+
+.button {
+  color: #fff;
+  font-weight: bold;
+  width: 12%;
+  position: fixed;
+}
+
+.social-media {
+  display: inline-block;
+  background-color: #222;
+  padding-top: 1.5%;
+  padding-left: 2%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  word-spacing: 20px;
+
+}
+
+.mobile-platforms {
+  display: none;
+}
+
+
+.coming-soon {
+  width: 35%;
+  font-size: 1.5em;
+  padding-left: 70px;
+  text-align: center;
+  float: left;
+  border-top: none;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background-color: #ccc;
+  margin: 0;
+
+}
+
+.coming-soon h2 {
+  font-size: 1em;
+  margin: 2% 5%;
+  padding: 0;
+}
+
+
+.team-title {
+  font-size: 2em;
+  margin-right: 4%;
+}
+
+.team-description {
+  margin: 0 4%;
+}
+
+.team-img {
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:15%;
+	padding-bottom:15%;
+	float:left;
+	margin-right:20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+	border:1px solid #4d0099;
+}
+
+.container {
+width:40%;
+position: relative;
+margin-left: 30%;
+
+}
+
+.reach-out {
+  text-align: center;
+  margin: 4%;
+  font-size: 1.2em;
+}
+
+#contact-img {
+  display: inline-block;
+  float: left;
+}
+
+/*=====portfolio 940======*/
+.portfolio h1 {
+  margin: 2% 5% 0 5%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio p {
+  margin: 0 5% 5% 5%;
+  text-align: center;
+}
+
+.portfolio-img {
+  padding: 0 2% 2% 5%;
+  text-align: center;
+  float: left;
+}
+
+.client-info {
+  margin: 0 5%;
+  float: left;
+  width: 60%;
+  font-size: 1.2em;
+}
+
+.client-testimony {
+  clear: both;
+  margin: 7% 5%;
+  padding-right: 5%;
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  color: #262673;
+}
+
+.more {
+  margin: 5%;
+  text-align: center;
+}
+
+footer {
+  clear: both;
+}
+
+footer p {
+  line-height: 0px;
+}
+
+/*===dropdown 940======*/
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    color: #eee;
+    margin: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+    background-color: inherit;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 7px;
+    right: 0;
+    top: 0;
+
+}
+
+.nav-bkgd a:hover, .dropdown:hover .dropbtn {
+    background-color: #aa80ff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #222;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/*====end of dropdown 940======*/
+
+/*=====TEMPLATE PAGE 940=======*/
+.mommy-blog-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+  padding-bottom: 25%;
+  border: 1px solid #404040;
+}
+
+#blog-template-img {
+  background-image: url('../img/blog-template.520w.png');
+}
+
+.template-1 p {
+  font-size: 1.1em;
+}
+
+/*===SERVICE 940=======*/
+.service-button {
+  width: 20%;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
