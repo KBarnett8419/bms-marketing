@@ -295,8 +295,9 @@ footer p {
   nav {
     float: right;
     position: relative;
-    bottom: 320px;
+    bottom: 340px;
     width: 47%;
+    z-index: 1;
   }
 
   nav ul li {
@@ -328,9 +329,10 @@ footer p {
   }
 
   .bms-logo {
-    margin: 1% 7%;
+    margin: 1% 8%;
     position: relative;
     bottom: 130px;
+    z-index: 1;
   }
 
   .motto {
@@ -340,7 +342,7 @@ footer p {
     color: #fff;
     font-weight: 300;
     position: relative;
-    bottom: 270px;
+    bottom: 290px;
     right: 180px;
   }
 
@@ -396,7 +398,7 @@ footer p {
 }
 
 .testimonial-container {
-  background-color: #e6ffff;
+  background-color: #eafafa;
   width: 100%;
   padding: 0.5% 0 3% 0;
 }
@@ -410,6 +412,62 @@ footer p {
   font-family: 'Dancing Script', cursive;
   font-size: 2.2em;
 }
+
+/*=======SERVICES 940==============*/
+.services, .serv-lines, .disclaimer {
+  margin: 0 25% 0 5%;
+}
+
+.service-container-1 {
+  width: 100%;
+  background-color: #eafafa;
+  padding: 15% 5% 2% 5%;
+}
+
+.service-container-2 {
+  background-color: #fff;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.service-container-3 {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.service-container-4 {
+  background-color: #fff;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.disclaimer-container {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.services h1 span {
+  color: #29b5bc;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+}
+
+.serv-lines h3 {
+  font-size: 1.5em;
+  color: #29b5bc;
+}
+
+
+#learn-more-1, #learn-more-2, #learn-more-3, #learn-more-4 {
+margin-top: 3%;
+background-color: #8ce1e6;
+color: #222;
+font-weight: bolder;
+font-size: 1.1em;
+}
+
 
 }
 
