@@ -15,8 +15,7 @@
         <link rel="stylesheet" type="text/css" href="../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Arapey|Source+Serif+Pro" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Michroma|Poiret+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat|Poppins" rel="stylesheet">
 
     </head>
     <body>
@@ -25,40 +24,25 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-      <div class="nav-bkgd">
-        <nav id="nav">
-          <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../services/index.html">Services</a></li>
-              <li><a href="../about/index.html">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Portfolio</button>
-                  <div class="dropdown-content" id="myDropdown">
-                    <a href="../portfolio/index.html">Portfolio</a>
-                    <a href="../templates/index.html">Templates</a>
-                  </div>
-                </div>
-          </ul>
-        </nav>
+        <header class="fixed-header">
+          <div class="top-banner"></div>
+            <img src="../img/teal-transparent-logo2.png" alt="barnett-marketing-solutions-logo-in-aqua" class="bms-logo" width="14%" height="14%">
+            <h2 class="motto">Helping businesses reach their maximum potential.</h2>
 
-        <div class="social-media">
-          <a href="https://www.facebook.com/Barnett-Marketing-Solutions-1828167670777042/" target="_blank"><img src="../img/facebook-3-64-ccc.png" alt="facebook icon" style="width:32px; height:32px" /></a>
-          <a href="https://twitter.com/KBarnett8419" target="_blank"><img src="../img/twitter-64-ccc.png" alt="twitter icon" style="width:32px; height:32px"/></a>
-          <a href="https://www.instagram.com/barnettmarketing/" target="_blank"><img src="../img/instagram-64-ccc.png" alt="instagram icon" style="width:32px; height:32px" /></a>
-          <a href="https://www.linkedin.com/in/keri-barnett-33601a29" target="_blank"><img src="../img/linkedin-3-64-ccc.png" alt="linkedin icon" style="width:32px; height:32px"/></a>
-          <a href="mailto:keri.barnett@barnettmarketing.org" target="_blank"><img src="../img/mail64.png" alt="email icon" style="width:28px height:48px"/></a>
-        </div>
+            <div class="nav-bkgd">
+              <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../services/index.html">Services</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="../portfolio/index.html">Portfolio</a></li>
+                </ul>
+              </nav>
 
-      </div><!--nav-bkgd-->
-
-    <header class="introduction" id="intro-background">
-      <h1 id="company-name">Barnett Marketing Solutions</h1>
-    </header>
-    <div class="motto">
-      <h2>Helping businesses reach their maximum potential.</h2>
-    </div>
-
+            </div><!--nav-bkgd-->
+        </header>
+<!--end of header-->
 
 
     <!--[if lt IE 10]>
@@ -66,9 +50,11 @@
     <![endif]-->
     </head>
 
+<div class="contact-container">
+  <div class="contact-wrapper">
     <section class="reach-out">
-      <h3>Contact Us</h3>
-      <p><span>Ready to start</span> or have questions? We'd love to you hear from you! Please fill out the form below and we will get back to you within 24 hours.</p>
+      <h1><span>C</span>ontact Us</h1>
+      <p><span>Ready to start</span> or have questions? We'd love to you hear from you!<br> Please fill out the form below and we will get back to you within 24 hours.</p>
     </section>
 
     <body class="contact-form">
@@ -77,10 +63,10 @@
       <div class="row">
         <div class="col-md-6">
       <form action="html-contact-form.php" id="form" method="post" name="form">
-       <input name="name" placeholder="Your Name" type="text" value="">
-       <input name="email" placeholder="Your Email" type="text" value="">
-       <input name="subject" placeholder="Subject" type="text" value="">
-       <textarea name="message" placeholder="Write message here..."></textarea>
+       <p><b>Name</b></p><input name="name" placeholder="" type="text" value="">
+       <p><b>Email</b></p><input name="email" placeholder="" type="text" value="">
+       <p><b>Subject</b></p><input name="subject" placeholder="" type="text" value="">
+       <p><b>What do you want to tell us?</b></p><textarea name="message" placeholder=""></textarea>
 
        <img src="captcha_code_file.php"
        id="captchaimg" >
@@ -94,11 +80,18 @@
       </div>
       </div>
 
-
-    </body>
+    </div><!--contact-wrapper-->
+  </div><!--contact-container-->
 
     <footer>
-      <p>Developed by Barnett Marketing Solutions</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com/Barnett-Marketing-Solutions-1828167670777042/" target="_blank"><img src="../img/facebook-3-64-ccc.png" alt="facebook icon" style="width:32px; height:32px" /></a>
+        <a href="https://twitter.com/KBarnett8419" target="_blank"><img src="../img/twitter-64-ccc.png" alt="twitter icon" style="width:32px; height:32px"/></a>
+        <a href="https://www.instagram.com/barnettmarketing/" target="_blank"><img src="../img/instagram-64-ccc.png" alt="instagram icon" style="width:32px; height:32px" /></a>
+        <a href="https://www.linkedin.com/in/keri-barnett-33601a29" target="_blank"><img src="../img/linkedin-3-64-ccc.png" alt="linkedin icon" style="width:32px; height:32px"/></a>
+        <a href="mailto:keri.barnett@barnettmarketing.org" target="_blank"><img src="../img/mail64.png" alt="email icon" style="width:28px height:48px"/></a>
+      </div>
+      <p>Copyright (c) 2017 Barnett Marketing Solutions. All Rights Reserved. <br>Developed by Barnett Marketing Solutions</p>
     </footer>
 
 <!--end author content here-->

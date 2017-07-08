@@ -102,6 +102,11 @@ html, body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #009999;
+}
+
 /*============FOOTER==============*/
 
 footer {
@@ -114,6 +119,8 @@ footer {
 footer p {
   margin: 0 5%;
 }
+
+/*=======HOME BODY mobile======*/
 
 .website-offer-body {
   background-position: center;
@@ -181,7 +188,151 @@ footer p {
   font-size: 2.2em;
 }
 
+/*=======SERVICES mobile==============*/
+.services, .serv-lines, .disclaimer {
+  margin: 0 25% 0 5%;
+}
 
+.service-container-1 {
+  width: 100%;
+  background-color: #eafafa;
+  padding: 15% 5% 2% 5%;
+}
+
+.service-container-2 {
+  background-color: #fff;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.service-container-3 {
+  background-color: #eafafa;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.service-container-4 {
+  background-color: #fff;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.disclaimer-container {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+h1 span {
+  color: #29b5bc;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+}
+
+.serv-lines h3 {
+  font-size: 1.5em;
+  color: #29b5bc;
+}
+
+#learn-more-1, #learn-more-2, #learn-more-3, #learn-more-4 {
+margin-top: 3%;
+background-color: #8ce1e6;
+color: #222;
+font-weight: bolder;
+font-size: 1.1em;
+}
+
+/*========ABOUT mobile=======*/
+.about-us-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 15% 5% 2% 5%;
+}
+
+.mission-container {
+  background-color: #eafafa;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.team-container {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.about-wrapper {
+    margin: 0 25% 0 5%;
+}
+
+.team-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  padding-bottom: 50%;
+  background-image: url('../img/keri-barnett1.png');
+}
+
+/*========CONTACT mobile========*/
+.contact-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 15% 5% 2% 5%;
+}
+
+.contact-wrapper {
+  margin: 0 5% 5% 5%;
+}
+
+input {
+  display: block;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  margin-top: -10px;
+  padding: 50px;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+#captchaimg {
+  display: block;
+}
+
+#send {
+margin-top: 3%;
+background-color: #8ce1e6;
+color: #222;
+font-weight: bolder;
+font-size: 1.1em;
+}
+
+/*=====PORTFOLIO mobile========*/
+.portfolio-container {
+  width: 100%;
+  background-color: #eafafa;
+  padding: 15% 5% 2% 5%;
+}
+
+.portfolio-wrapper {
+    margin: 0 25% 0 5%;
+}
+
+.portfolio p {
+  margin: -3% 0 5% 0;
+}
+
+/*======THANKS mobile=========*/
+.thanks {
+  margin-top: 15%;
+  text-align: center;
+  padding-bottom: 10%;
+}
 
 
 
@@ -431,7 +582,7 @@ footer p {
 }
 
 .service-container-3 {
-  background-color: #f2f2f2;
+  background-color: #eafafa;
   width: 100%;
   padding: 0.5% 0 3% 5%;
 }
@@ -448,17 +599,16 @@ footer p {
   padding: 0.5% 0 3% 5%;
 }
 
-.services h1 span {
+h1 span {
   color: #29b5bc;
   font-family: 'Dancing Script', cursive;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .serv-lines h3 {
   font-size: 1.5em;
   color: #29b5bc;
 }
-
 
 #learn-more-1, #learn-more-2, #learn-more-3, #learn-more-4 {
 margin-top: 3%;
@@ -468,6 +618,93 @@ font-weight: bolder;
 font-size: 1.1em;
 }
 
+/*========ABOUT 940=======*/
+.about-us-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 15% 5% 2% 5%;
+}
+
+.mission-container {
+  background-color: #eafafa;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.team-container {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 0.5% 0 3% 5%;
+}
+
+.about-wrapper {
+    margin: 0 25% 0 5%;
+}
+
+.team-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%;
+  padding-bottom: 20%;
+  background-image: url('../img/keri-barnett1.png');
+}
+
+/*========CONTACT 940========*/
+.contact-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 15% 5% 2% 5%;
+}
+
+input {
+  display: block;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  margin-top: -10px;
+  padding: 50px;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+#captchaimg {
+  display: block;
+}
+
+#send {
+margin-top: 3%;
+background-color: #8ce1e6;
+color: #222;
+font-weight: bolder;
+font-size: 1.1em;
+}
+
+/*=====PORTFOLIO 940========*/
+.portfolio-container {
+  width: 100%;
+  background-color: #eafafa;
+  padding: 15% 5% 2% 5%;
+}
+
+.portfolio-wrapper {
+    margin: 0 25% 0 5%;
+}
+
+.portfolio p {
+  margin: -3% 0 5% 0;
+}
+
+/*======THANKS 940=========*/
+.thanks {
+  margin-top: 15%;
+  text-align: center;
+  padding-bottom: 10%;
+}
 
 }
 

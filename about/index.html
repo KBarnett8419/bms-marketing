@@ -14,10 +14,12 @@
 
         <link rel="stylesheet" type="text/css" href="../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Arapey|Source+Serif+Pro" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Michroma|Poiret+One" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat|Poppins" rel="stylesheet">
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -25,46 +27,30 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-      <div class="nav-bkgd">
-        <nav id="nav">
-          <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../services/index.html">Services</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="../contact/index.html">Contact</a></li>
-              <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Portfolio</button>
-                  <div class="dropdown-content" id="myDropdown">
-                    <a href="../portfolio/index.html">Portfolio</a>
-                    <a href="../templates/index.html">Templates</a>
-                  </div>
-                </div>
-          </ul>
-        </nav>
+        <header class="fixed-header">
+          <div class="top-banner"></div>
+            <img src="../img/teal-transparent-logo2.png" alt="barnett-marketing-solutions-logo-in-aqua" class="bms-logo" width="14%" height="14%">
+            <h2 class="motto">Helping businesses reach their maximum potential.</h2>
 
-        <div class="social-media">
-          <a href="https://www.facebook.com/Barnett-Marketing-Solutions-1828167670777042/" target="_blank"><img src="../img/facebook-3-64-ccc.png" alt="facebook icon" style="width:32px; height:32px" /></a>
-          <a href="https://twitter.com/KBarnett8419" target="_blank"><img src="../img/twitter-64-ccc.png" alt="twitter icon" style="width:32px; height:32px"/></a>
-          <a href="https://www.instagram.com/barnettmarketing/" target="_blank"><img src="../img/instagram-64-ccc.png" alt="instagram icon" style="width:32px; height:32px" /></a>
-          <a href="https://www.linkedin.com/in/keri-barnett-33601a29" target="_blank"><img src="../img/linkedin-3-64-ccc.png" alt="linkedin icon" style="width:32px; height:32px"/></a>
-          <a href="mailto:keri.barnett@barnettmarketing.org" target="_blank"><img src="../img/mail64.png" alt="email icon" style="width:28px height:48px"/></a>
-        </div>
+            <div class="nav-bkgd">
+              <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../services/index.html">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                    <li><a href="../portfolio/index.html">Portfolio</a></li>
+                </ul>
+              </nav>
 
-      </div><!--nav-bkgd-->
+            </div><!--nav-bkgd-->
+        </header>
 
-    <header class="introduction" id="intro-background">
-      <h1 id="company-name">Barnett Marketing Solutions</h1>
-    </header>
-    <div class="motto">
-      <h2>Helping businesses reach their maximum potential.</h2>
-    </div>
-
-        <div class="team">
-          <div class="team-member clearfix">
+    <!--end of header-->
 
           <div class="about-us-container">
-            <div class="about-company">
-              <h2>About Us</h2>
+            <div class="about-wrapper">
+              <h1><span>A</span>bout Us</h1>
               <p>At Barnett Marketing Solutions we build responsive, mobile-friendly websites and provide online marketing management on social media platforms based on your vision and marketing plan. We also offer consultation to help entrepreneurs and small business owners make the next important steps forward.
               <br><br>
               As a company, our goal is to alleviate the stress of business owners by advising and executing the necessary actions to ensure a growing business. Not everyone is meant to create the product and do everything on his or her own. In fact, it can actually be counterproductive
@@ -74,8 +60,8 @@
           </div>
 
         <div class="mission-container">
-          <div class="mission" id="mission">
-            <h2>Company Mission</h2>
+          <div class="about-wrapper" id="mission">
+            <h1><span>C</span>ompany Mission</h1>
             <p>Our mission is to help start-ups and entrepreneurs increase the success of their businesses by aligning
             with their vision and executing sustainable marketing plans. With all the incredible talent in the world,
             we want you to focus on honing your skills without worrying about growing the business on your own.
@@ -84,8 +70,11 @@
           </div>
         </div>
 
-            <div class="team-img" id="team-img-keri"></div>
-             <h1 class="team-title">About the Founder: <br>Keri Barnett</h1>
+          <div class="team-container">
+            <div class="about-wrapper">
+              <h1 class="team-title"><span>A</span>bout the Founder</h1>
+                <div class="team-img" id="team-img-keri"></div>
+                  <h2>Keri Barnett</h2>
                <p class="team-description">Keri is a Front-End Web Developer and experienced marketing professional. With Product, Project, and Pricing Management under her belt, she achieved exceptional results in the corporate arena.
 <br><br>
 At just 20 years old, Keri was promoted to an associate manager role after only 8 months at the company. It was during that time that she learned every position, subbing for anyone who was out of the office. By age 22, she was manager to 9 direct reports and about 30 indirect reports, specializing in SAP problem resolution, email communication, and new systems training. She was even sent to other locations to lead a smooth implementation of new SAP modules.
@@ -101,9 +90,17 @@ She lives in New Jersey with her husband and son. In her free time she loves to 
   </p>
          </div>
       </div>
+    </div><!--team container-->
 
       <footer>
-        <p>Developed by Barnett Marketing Solutions</p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/Barnett-Marketing-Solutions-1828167670777042/" target="_blank"><img src="../img/facebook-3-64-ccc.png" alt="facebook icon" style="width:32px; height:32px" /></a>
+          <a href="https://twitter.com/KBarnett8419" target="_blank"><img src="../img/twitter-64-ccc.png" alt="twitter icon" style="width:32px; height:32px"/></a>
+          <a href="https://www.instagram.com/barnettmarketing/" target="_blank"><img src="../img/instagram-64-ccc.png" alt="instagram icon" style="width:32px; height:32px" /></a>
+          <a href="https://www.linkedin.com/in/keri-barnett-33601a29" target="_blank"><img src="../img/linkedin-3-64-ccc.png" alt="linkedin icon" style="width:32px; height:32px"/></a>
+          <a href="mailto:keri.barnett@barnettmarketing.org" target="_blank"><img src="../img/mail64.png" alt="email icon" style="width:28px height:48px"/></a>
+        </div>
+        <p>Copyright (c) 2017 Barnett Marketing Solutions. All Rights Reserved. <br>Developed by Barnett Marketing Solutions</p>
       </footer>
 
 <!--end author content here-->
